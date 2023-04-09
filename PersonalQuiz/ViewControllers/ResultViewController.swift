@@ -40,16 +40,17 @@ final class ResultViewController: UIViewController {
             }
         }
         
-        var greaterValue: Animal
+        var greaterValue: Animal!
         var maxCount = 1
         for (answer, count) in animals {
             if count > maxCount {
                 maxCount = count
                 greaterValue = answer
-                iconLabel.text = "Вы - \(greaterValue.rawValue)"
-                yourResultLabel.text = greaterValue.definition
             }
         }
+        
+        iconLabel.text = "Вы - \(greaterValue.rawValue)"
+        yourResultLabel.text = greaterValue.definition
     }
 }
 
