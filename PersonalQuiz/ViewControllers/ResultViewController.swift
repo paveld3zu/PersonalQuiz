@@ -9,10 +9,10 @@ import UIKit
 
 final class ResultViewController: UIViewController {
     
-    var answersChosen: [Answer]!
-    
     @IBOutlet var iconLabel: UILabel!
     @IBOutlet var yourResultLabel: UILabel!
+    
+    var answersChosen: [Answer]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
