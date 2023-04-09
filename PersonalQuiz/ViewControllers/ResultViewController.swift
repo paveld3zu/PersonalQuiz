@@ -28,8 +28,8 @@ final class ResultViewController: UIViewController {
         var animals: [Animal: Int] = [:]
         var answers: [Animal] = []
         
-        for answer in answersChosen {
-            answers.append(answer.animal)
+        for answerChosen in answersChosen {
+            answers.append(answerChosen.animal)
         }
         
         for answer in answers {
